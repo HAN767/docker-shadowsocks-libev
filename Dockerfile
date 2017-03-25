@@ -50,7 +50,4 @@ ENV PASSWORD    easy3.14
 
 EXPOSE $SERVER_PORT/tcp
 
-CMD ss-server -s "$SERVER_ADDR" \
-              -p "$SERVER_PORT" \
-              -m "$METHOD"      \
-              -k "$PASSWORD"    
+CMD ss-server -s "$SERVER_ADDR" -p "$SERVER_PORT" -m "$METHOD" -k "$PASSWORD"    
