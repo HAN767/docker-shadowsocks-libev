@@ -43,7 +43,7 @@ RUN set -ex \
         && rm -rf $SS_DIR \
     && apk del TMP
 
-ENV SERVER_ADDR 0.0.0.0
+ENV SERVER_ADDR localhost
 ENV SERVER_PORT 1491
 ENV METHOD      aes-128-cfb
 ENV PASSWORD    easy3.14
