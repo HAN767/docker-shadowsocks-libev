@@ -44,9 +44,9 @@ RUN set -ex \
     && apk del TMP
 
 ENV SERVER_ADDR 0.0.0.0
-ENV SERVER_PORT 8388
-ENV METHOD      aes-256-cfb
-ENV PASSWORD=
+ENV SERVER_PORT 1491
+ENV METHOD      aes-128-cfb
+ENV PASSWORD=   easy3.14
 ENV TIMEOUT     60
 ENV DNS_ADDR    8.8.8.8
 
@@ -60,4 +60,3 @@ CMD ss-server -s "$SERVER_ADDR" \
               -t "$TIMEOUT"     \
               -d "$DNS_ADDR"    \
               -u                \
-              --fast-open $OPTIONS
