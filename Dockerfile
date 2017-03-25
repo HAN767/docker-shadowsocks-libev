@@ -47,16 +47,10 @@ ENV SERVER_ADDR 0.0.0.0
 ENV SERVER_PORT 1491
 ENV METHOD      aes-128-cfb
 ENV PASSWORD    easy3.14
-ENV TIMEOUT     60
-ENV DNS_ADDR    8.8.8.8
 
 EXPOSE $SERVER_PORT/tcp
-EXPOSE $SERVER_PORT/udp
 
 CMD ss-server -s "$SERVER_ADDR" \
               -p "$SERVER_PORT" \
               -m "$METHOD"      \
-              -k "$PASSWORD"    \
-              -t "$TIMEOUT"     \
-              -d "$DNS_ADDR"    \
-              -u                \
+              -k "$PASSWORD"    
