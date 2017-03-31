@@ -20,6 +20,7 @@ RUN set -ex \
                              automake \
                              build-base \
                              curl \
+                             file \
                              gettext-dev \
                              libev-dev \
                              libsodium-dev \
