@@ -13,7 +13,6 @@ RUN set -ex \
     && apk add --no-cache libcrypto1.0 \
                           libev \
                           libsodium \
-                          mbedtls \
                           pcre \
                           udns \
     && apk add --no-cache \
@@ -26,7 +25,6 @@ RUN set -ex \
                              libsodium-dev \
                              libtool \
                              linux-headers \
-                             mbedtls-dev \
                              openssl-dev \
                              pcre-dev \
                              tar \
