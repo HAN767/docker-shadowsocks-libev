@@ -2,8 +2,8 @@
 # Dockerfile for shadowsocks-libev
 #
 
-FROM alpine
-MAINTAINER EasyPi Software Foundation
+FROM alpine:3.3
+MAINTAINER Li ZHOU
 
 ENV SS_VER 2.5.0
 ENV SS_URL https://github.com/shadowsocks/shadowsocks-libev/archive/v$SS_VER.tar.gz
