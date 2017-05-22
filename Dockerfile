@@ -41,7 +41,7 @@ RUN set -ex \
         && rm -rf $SS_DIR \
     && apk del TMP
 
-ENV SERVER_ADDR 0.0.0.0
+ENV SERVER_ADDR 127.0.0.1
 ENV SERVER_PORT 1491
 ENV METHOD      camellia-128-cfb
 ENV PASSWORD    easy3.14
